@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch - barcode_recognition",                
+            "type": "lldb",                         
+            "request": "launch",
+            "program": "${workspaceRoot}/build/barcode_recognition",
+            "args": [
+                "-i=./images/4_barcodes.jpeg",
+                "--detect=false",
+                "-o=./out/4_barcodes.jpeg",
+                "--sr_prototxt=sr.prototxt",
+                "--sr_model=sr.caffemodel"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "g++",
+        }
+    ]
+ }
